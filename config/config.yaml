@@ -1,0 +1,37 @@
+---
+application:
+  name: "example"
+
+server:
+  host        : ""
+  use_http    : true
+  use_https   : false
+  http_port   : 8080
+  https_port  : 443
+  cert_file   : "/path/to/server.crt"
+  key_file    : "/path/to/server.key"
+
+database:
+  mysql:
+    host      : "127.0.0.1"
+    port      : 3306
+    username  : "root"
+    password  : "root"
+    database  : "gowebapi"
+    parameter : "?parseTime=true"
+  
+  mongodb:
+    host      : "127.0.0.1"
+    port      : 27017
+    username  : "root"
+    password  : "root"
+    database  : "admin"
+
+email:
+  host: "smtp.mailtrap.io"
+  port: 465
+  from_name: "example"
+  from_address: "address@example.com"
+  encryption: "tls"
+  username: "XXXXXX"
+  password: "XXXXXX"
